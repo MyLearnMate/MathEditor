@@ -25,8 +25,12 @@
     self.mathLabel.layer.borderWidth = 2;
     self.mathLabel.layer.cornerRadius = 5;
     self.mathLabel.keyboard = [MTMathKeyboardRootView sharedInstance];
+    self.mathLabel.keyboard.autoresizingMask = UIViewAutoresizingNone;
     self.mathLabel.delegate = self;
     [self.mathLabel enableTap:YES];
+    
+    self.mathLabel.inputAssistantItem.leadingBarButtonGroups=@[];
+    self.mathLabel.inputAssistantItem.trailingBarButtonGroups=@[];
 }
 
 - (void)didReceiveMemoryWarning
