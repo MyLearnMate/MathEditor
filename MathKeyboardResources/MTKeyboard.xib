@@ -266,7 +266,7 @@
                     <rect key="frame" x="0.0" y="45" width="50" height="45"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                     <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
-                    <state key="normal" title="y">
+                    <state key="normal" title="∅">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -274,7 +274,7 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
-                        <action selector="keyPressed:" destination="1" eventType="touchUpInside" id="rrj-0U-1R2"/>
+                        <action selector="emptySetPressed:" destination="1" eventType="touchUpInside" id="yoA-kc-k4w"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ST5-ST-guE" userLabel="ExponentButton">
@@ -328,7 +328,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="50" height="45"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                     <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
-                    <state key="normal" title="x">
+                    <state key="normal" title="ℝ">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -336,7 +336,7 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
-                        <action selector="keyPressed:" destination="1" eventType="touchUpInside" id="hjo-wk-bTB"/>
+                        <action selector="allRealNumbersPressed:" destination="1" eventType="touchUpInside" id="sqq-12-gij"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8">
@@ -479,9 +479,7 @@
                 <outletCollection property="operators" destination="69" id="121"/>
                 <outletCollection property="operators" destination="70" id="122"/>
                 <outletCollection property="numbers" destination="12" id="132"/>
-                <outletCollection property="variables" destination="wsD-on-Pdh" id="UBQ-xI-vJC"/>
                 <outletCollection property="operators" destination="71" id="FZa-Jg-R95"/>
-                <outletCollection property="variables" destination="gHm-sa-Vem" id="b1d-8e-vTN"/>
             </connections>
             <point key="canvasLocation" x="266" y="482"/>
         </view>

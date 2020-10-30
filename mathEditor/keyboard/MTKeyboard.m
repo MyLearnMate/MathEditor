@@ -165,6 +165,14 @@
     }
 }
 
+- (IBAction)allRealNumbersPressed:(id)sender {
+    [self.textView insertText:@"R"];
+}
+
+- (IBAction)emptySetPressed:(id)sender {
+    [self.textView insertText:@"emptyset"];
+}
+
 #pragma mark - Keyboard Context
 
 
