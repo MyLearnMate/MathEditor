@@ -10,59 +10,75 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleAspectFill" id="iN0-l3-epB" customClass="MTMathKeyboardRootView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="340" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="CSI-WM-BTY" userLabel="ContainerView">
-                    <rect key="frame" x="75" y="0.0" width="245" height="200"/>
+                    <rect key="frame" x="0.0" y="30" width="340" height="170"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="KUA-FD-hmd"/>
+                        <constraint firstAttribute="height" constant="170" id="3px-pX-DOw"/>
                     </constraints>
                 </view>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G4v-tP-LJf">
-                    <rect key="frame" x="0.0" y="1" width="75" height="199"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G4v-tP-LJf">
+                    <rect key="frame" x="0.0" y="0.0" width="340" height="30"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPm-TR-9mx" userLabel="123">
-                            <rect key="frame" x="0.0" y="0.0" width="75" height="38"/>
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
                             <color key="backgroundColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" image="Numbers Symbol wbg">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Algebra">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <state key="selected" image="Number Symbol"/>
                             <connections>
                                 <action selector="switchTabs:" destination="iN0-l3-epB" eventType="touchUpInside" id="Yd3-cq-B4b"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cR-QV-XuP" userLabel="()&lt;&gt;">
-                            <rect key="frame" x="0.0" y="54" width="75" height="37.5"/>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huQ-Lj-rSI" userLabel="123">
+                            <rect key="frame" x="71" y="0.0" width="55.5" height="30"/>
                             <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" image="Operations Symbol wbg">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="123">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <state key="selected" image="Operations Symbol"/>
+                            <connections>
+                                <action selector="switchTabs:" destination="iN0-l3-epB" eventType="touchUpInside" id="fn9-l8-9PM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cR-QV-XuP" userLabel="()&lt;&gt;">
+                            <rect key="frame" x="142.5" y="0.0" width="55" height="30"/>
+                            <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="()%&lt;">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
                             <connections>
                                 <action selector="switchTabs:" destination="iN0-l3-epB" eventType="touchUpInside" id="T22-hh-CVr"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nJ-5m-bi3" userLabel="f(x)">
-                            <rect key="frame" x="0.0" y="107.5" width="75" height="38"/>
+                        <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nJ-5m-bi3" userLabel="f(x)">
+                            <rect key="frame" x="213.5" y="0.0" width="55.5" height="30"/>
                             <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" image="Functions Symbol wbg">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="f(x)">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <state key="selected" image="Functions Symbol"/>
                             <connections>
                                 <action selector="switchTabs:" destination="iN0-l3-epB" eventType="touchUpInside" id="MJC-ao-PXT"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypu-KD-PWt" userLabel="abc">
-                            <rect key="frame" x="0.0" y="161.5" width="75" height="37.5"/>
+                        <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypu-KD-PWt" userLabel="abc">
+                            <rect key="frame" x="285" y="0.0" width="55" height="30"/>
                             <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" image="Letter Symbol wbg">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="abc">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <state key="selected" image="Letter Symbol"/>
                             <connections>
                                 <action selector="switchTabs:" destination="iN0-l3-epB" eventType="touchUpInside" id="YRu-qx-dt5"/>
                             </connections>
@@ -70,40 +86,31 @@
                     </subviews>
                     <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="75" id="SJy-RA-0cv"/>
+                        <constraint firstAttribute="height" constant="30" id="Lih-w2-xZA"/>
                     </constraints>
                 </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="G4v-tP-LJf" secondAttribute="bottom" id="Tz8-bg-piw"/>
-                <constraint firstAttribute="bottom" secondItem="CSI-WM-BTY" secondAttribute="bottom" id="VR9-iB-G9I"/>
-                <constraint firstItem="G4v-tP-LJf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cnr-sC-7Ie"/>
-                <constraint firstAttribute="trailing" secondItem="CSI-WM-BTY" secondAttribute="trailing" id="cxP-Li-XJZ"/>
-                <constraint firstItem="CSI-WM-BTY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="g8L-cy-MeJ"/>
-                <constraint firstItem="CSI-WM-BTY" firstAttribute="leading" secondItem="G4v-tP-LJf" secondAttribute="trailing" id="mrS-bX-xmg"/>
-                <constraint firstItem="G4v-tP-LJf" firstAttribute="top" secondItem="CSI-WM-BTY" secondAttribute="top" constant="1" id="rgI-jh-xly"/>
+                <constraint firstItem="G4v-tP-LJf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="08i-dA-AAk"/>
+                <constraint firstAttribute="trailing" secondItem="G4v-tP-LJf" secondAttribute="trailing" id="44c-g6-K6l"/>
+                <constraint firstItem="G4v-tP-LJf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D2U-Zl-GPO"/>
+                <constraint firstItem="CSI-WM-BTY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pzz-sB-ahL"/>
+                <constraint firstItem="CSI-WM-BTY" firstAttribute="top" secondItem="G4v-tP-LJf" secondAttribute="bottom" id="UnA-Qg-ldS"/>
+                <constraint firstAttribute="trailing" secondItem="CSI-WM-BTY" secondAttribute="trailing" id="a7X-db-Rba"/>
+                <constraint firstAttribute="bottom" secondItem="CSI-WM-BTY" secondAttribute="bottom" id="vja-CU-ryX"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="algebraTab" destination="cPm-TR-9mx" id="95X-9e-0vW"/>
                 <outlet property="contentView" destination="CSI-WM-BTY" id="k3f-C0-naz"/>
                 <outlet property="functionsTab" destination="8nJ-5m-bi3" id="Lcx-oO-LKG"/>
                 <outlet property="lettersTab" destination="ypu-KD-PWt" id="qQX-xA-mRF"/>
-                <outlet property="numbersTab" destination="cPm-TR-9mx" id="FUY-4f-cwj"/>
+                <outlet property="numbersTab" destination="huQ-Lj-rSI" id="OUo-9G-JCx"/>
                 <outlet property="operationsTab" destination="4cR-QV-XuP" id="YcP-k7-h1L"/>
             </connections>
-            <point key="canvasLocation" x="-182.60869565217394" y="273.21428571428572"/>
+            <point key="canvasLocation" x="-293" y="244"/>
         </view>
     </objects>
-    <resources>
-        <image name="Functions Symbol" width="80" height="45"/>
-        <image name="Functions Symbol wbg" width="79" height="44"/>
-        <image name="Letter Symbol" width="80" height="45"/>
-        <image name="Letter Symbol wbg" width="79" height="44"/>
-        <image name="Number Symbol" width="80" height="45"/>
-        <image name="Numbers Symbol wbg" width="79" height="44"/>
-        <image name="Operations Symbol" width="80" height="45"/>
-        <image name="Operations Symbol wbg" width="79" height="44"/>
-    </resources>
 </document>

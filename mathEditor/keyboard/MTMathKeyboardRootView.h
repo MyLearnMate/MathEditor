@@ -14,15 +14,17 @@
 #import "MTKeyboard.h"
 #import "MTEditableMathLabel.h"
 
+API_AVAILABLE(ios(9.0))
 @interface MTMathKeyboardRootView : UIView<MTMathKeyboard>
 
 - (IBAction)switchTabs:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UIButton *algebraTab;
 @property (weak, nonatomic) IBOutlet UIButton *numbersTab;
 @property (weak, nonatomic) IBOutlet UIButton *lettersTab;
 @property (weak, nonatomic) IBOutlet UIButton *functionsTab;
 @property (weak, nonatomic) IBOutlet UIButton *operationsTab;
-
+@property (weak, nonatomic) IBOutlet UIStackView *keyboardTypeStackView;
 - (void) switchToDefaultTab;
 
 + (MTMathKeyboardRootView *)sharedInstance;

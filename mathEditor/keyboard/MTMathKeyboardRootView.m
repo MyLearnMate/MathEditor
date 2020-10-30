@@ -20,6 +20,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 @property (nonatomic) MTKeyboard *tab2Keyboard;
 @property (nonatomic) MTKeyboard *tab3Keyboard;
 @property (nonatomic) MTKeyboard *tab4Keyboard;
+@property (nonatomic) MTKeyboard *tab5Keyboard;
 @property (nonatomic) NSInteger currentTab;
 @property (nonatomic) NSArray<MTKeyboard*> *keyboards;
 
@@ -59,9 +60,11 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
     _tab2Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboardTab2" bundle:bundle] instantiateWithOwner:self options:nil][0];
     _tab3Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboardTab3" bundle:bundle] instantiateWithOwner:self options:nil][0];
     _tab4Keyboard = (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboardTab4" bundle:bundle] instantiateWithOwner:self options:nil][0];
+    
+    _tab5Keyboard =  (MTKeyboard *)[[UINib nibWithNibName:@"MTKeyboardTab5" bundle:bundle] instantiateWithOwner:self options:nil][0];
 
     // TODO Use keyboard array for operations involving all tabs
-    _keyboards = @[_tab1Keyboard, _tab2Keyboard, _tab3Keyboard, _tab4Keyboard];
+    _keyboards = @[_tab5Keyboard,_tab1Keyboard, _tab2Keyboard, _tab3Keyboard, _tab4Keyboard];
     _currentTab = -1;
 
     for (MTKeyboard *keyboard in _keyboards) {
@@ -84,10 +87,13 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
 
 -(void)greyTabButtons
 {
-    [_numbersTab setSelected:false];
-    [_operationsTab setSelected:false];
-    [_functionsTab setSelected:false];
-    [_lettersTab setSelected:false];
+    //UIColor *backgroundColor = [UIColor colorWithRed:196/255 green:196/255 blue:196/255 alpha:1.0];
+    UIColor *backgroundColor = _keyboardTypeStackView.backgroundColor;
+    [_algebraTab setBackgroundColor: backgroundColor];
+    [_numbersTab setBackgroundColor: backgroundColor];
+    [_operationsTab setBackgroundColor: backgroundColor];
+    [_functionsTab setBackgroundColor: backgroundColor];
+    [_lettersTab setBackgroundColor: backgroundColor];
 }
 
 -(void)switchKeyboard:(NSInteger)tabNumber
@@ -96,16 +102,19 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
     
     switch (tabNumber) {
         case 0:
-            [_numbersTab setSelected:true];
+            [_algebraTab setBackgroundColor: [UIColor colorWithRed: 242/255.0 green: 247/255.0 blue: 247/255.0 alpha: 1.0]];
             break;
         case 1:
-            [_operationsTab setSelected:true];
+            [_numbersTab setBackgroundColor: [UIColor colorWithRed: 235/255.0 green: 235/255.0 blue: 235/255.0 alpha: 1.0]];
             break;
         case 2:
-            [_functionsTab setSelected:true];
+            [_operationsTab setBackgroundColor: [UIColor colorWithRed: 239/255.0 green: 207/255.0 blue: 130/255.0 alpha: 1.0]];
             break;
         case 3:
-            [_lettersTab setSelected:true];
+            [_functionsTab setBackgroundColor: [UIColor colorWithRed: 146/255.0 green: 211/255.0 blue: 140/255.0 alpha: 1.0]];
+            break;
+        case 4:
+            [_lettersTab setBackgroundColor: [UIColor colorWithRed: 140/255.0 green: 203/255.0 blue: 233/255.0 alpha: 1.0]];
             break;
             
         default:
@@ -120,7 +129,7 @@ static NSInteger const DEFAULT_KEYBOARD = 0;
     }
 }
 
--(void)assignAndAnimateKeyboard:(NSInteger)keyboardNumber
+-(void) assignAndAnimateKeyboard:(NSInteger)keyboardNumber
 {
     MTKeyboard* newKeyboard = _keyboards[keyboardNumber];
 

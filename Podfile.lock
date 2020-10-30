@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   iosMath:
-    :commit: 0d2164c7639cbe62114437a3c1e59699aa4ffe26
+    :commit: b881b3cefc2b2fd5873ef3c4c156c4f262909ef6
     :git: https://github.com/turgutekmekci/iOSMath.git
 
 SPEC CHECKSUMS:
