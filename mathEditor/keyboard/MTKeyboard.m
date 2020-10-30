@@ -166,7 +166,7 @@
 }
 
 - (IBAction)allRealNumbersPressed:(id)sender {
-    [self.textView insertText:@"R"];
+    [self.textView insertText:@"realnumbers"];
 }
 
 - (IBAction)emptySetPressed:(id)sender {

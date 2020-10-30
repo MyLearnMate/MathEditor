@@ -280,6 +280,8 @@
                 return nil;
             }
         }
+        case kMTSubIndexTypeInner:
+            return nil;
     }
 }
 
