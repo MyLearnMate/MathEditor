@@ -76,7 +76,16 @@
     
     UIButton *button = sender;
     NSString* str = button.currentTitle;
+    
+    if([self.textView hasText] && ([self.operators containsObject: button] || [str isEqualToString: @"="])) {
+        [self.textView insertText:@"space"];
+    }
+    
     [self.textView insertText:str];
+    
+    if([self.operators containsObject: button] || [str isEqualToString: @"="]) {
+        [self.textView insertText:@"space"];
+    }
 }
 
 - (void)enterPressed:(id)sender
