@@ -430,12 +430,12 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j1-Ez-jds" userLabel="Enter">
                     <rect key="frame" x="239.5" y="135" width="80.5" height="45"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="Enter">
+                    <state key="normal" title="Space">
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <state key="highlighted" backgroundImage="Keyboard-grey-pressed"/>
                     <connections>
-                        <action selector="enterPressed:" destination="zrU-R7-hoO" eventType="touchUpInside" id="aqg-t5-DjA"/>
+                        <action selector="spacePressed:" destination="zrU-R7-hoO" eventType="touchUpInside" id="BRl-BQ-aNQ"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYa-Gu-rTh" userLabel="n">

@@ -182,6 +182,10 @@
     [self.textView insertText:@"emptyset"];
 }
 
+- (IBAction)spacePressed:(id)sender {
+    [self.textView insertText:@"space"];
+}
+
 #pragma mark - Keyboard Context
 
 
