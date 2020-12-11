@@ -75,17 +75,8 @@
     [self playClickForCustomKeyTap];
     
     UIButton *button = sender;
-    NSString* str = button.currentTitle;
-    
-    if([self.textView hasText] && ([self.operators containsObject: button] || [str isEqualToString: @"="])) {
-        [self.textView insertText:@"space"];
-    }
-    
+    NSString* str = button.currentTitle;    
     [self.textView insertText:str];
-    
-    if([self.operators containsObject: button] || [str isEqualToString: @"="]) {
-        [self.textView insertText:@"space"];
-    }
 }
 
 - (void)enterPressed:(id)sender
