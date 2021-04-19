@@ -9,7 +9,7 @@ target 'MathEditor_Tests' do
   pod 'MathEditor', :path => './'
 end
 target 'MathEditor' do
-  pod 'iosMath', :git => 'https://github.com/turgutekmekci/iOSMath.git', :branch => 'development'
+  pod 'iosMath', :git => 'https://github.com/MyLearnMate/iOSMath.git', :branch => 'development'
 end
 
 
