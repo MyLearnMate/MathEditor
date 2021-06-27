@@ -4,25 +4,25 @@ PODS:
     - iosMath (~> 0.9.3)
 
 DEPENDENCIES:
-  - iosMath (from `https://github.com/turgutekmekci/iOSMath.git`, branch `development`)
+  - iosMath (from `https://github.com/MyLearnMate/iOSMath.git`, branch `development`)
   - MathEditor (from `./`)
 
 EXTERNAL SOURCES:
   iosMath:
     :branch: development
-    :git: https://github.com/turgutekmekci/iOSMath.git
+    :git: https://github.com/MyLearnMate/iOSMath.git
   MathEditor:
     :path: "./"
 
 CHECKOUT OPTIONS:
   iosMath:
     :commit: f488bddcb0479e1bf268521ca6cd78962561099e
-    :git: https://github.com/turgutekmekci/iOSMath.git
+    :git: https://github.com/MyLearnMate/iOSMath.git
 
 SPEC CHECKSUMS:
   iosMath: 4f464433551995d8761ae0c44da88405f5e68ff8
   MathEditor: 0571991a0850213891aead3c2aae6d4b8faa7ced
 
-PODFILE CHECKSUM: d44a359539fec5fa419c732eff7638b27518f6ee
+PODFILE CHECKSUM: cebd3699fc14ba20dad4d95a7e1e29fbce8f241c
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1

@@ -343,7 +343,7 @@
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
-                                        <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="yWU-7O-WSQ"/>
+                                        <action selector="logWithBasePressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="BK6-pg-wfJ"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x74-0M-Ej1">
@@ -372,6 +372,9 @@
                                     <state key="highlighted" backgroundImage="Keyboard-grey-pressed">
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="keyPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="laC-qx-iqq"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJb-V7-iSR">
                                     <rect key="frame" x="398" y="0.0" width="78.5" height="54"/>
